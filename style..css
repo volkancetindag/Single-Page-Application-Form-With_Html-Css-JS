@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form1{
+    width: 650px;
+    height: 550px;
+    margin: 60px auto;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    background-color: #ecf0f1;
+}
+.row{
+    width: 650px;
+    height: 30px;
+    border: 1px solid #2c3e50;
+    //margin: 5px auto 0 auto;
+}
+.part1{
+    width: 20%;
+    height: inherit;
+    border: 1px solid darkblue;
+    float: left;
+}
+.part2{
+    width: 40%;
+    height: inherit;
+    border: 1px solid darkblue;
+    float: left;
+}
+.part3{
+    width: 40%;
+    height: inherit;
+    border: 1px solid darkblue;
+    float: left;
+}
