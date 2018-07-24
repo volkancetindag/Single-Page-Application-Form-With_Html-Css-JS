@@ -5,8 +5,22 @@
     <title>Application Form</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="style..css" type="text/css">
+    <script type="text/javascript">
+        function generateCo() {
+            var codes="";
+            for (var i=1;i<=6;i++){
+                if (Math.round(Math.random())===1){
+                    codes=codes+String.fromCharCode(65+25*Math.random());
+                }
+                else {
+                    codes=codes+String.fromCharCode(48+9*Math.random());
+                }
+            }
+            document.getElementById("generatedCode").value=codes;
+        }
+    </script>
 </head>
-<body>
+<body onload="generateCo()">
 <div class="form1">
     <form action="get">
         <div class="row">
@@ -70,7 +84,7 @@
         <div class="row">
             <div class="gender1 part1">Gender:</div>
             <div class="gender2 part2">
-                <input type="radio" name="gender">Male
+                <input type="radio" name="gender" checked>Male
                 <input type="radio" name="gender">Female
             </div>
             <div class="gender3 part3"></div>
@@ -86,7 +100,9 @@
             <div class="hobbies3 part3"></div>
         </div>
         <div class="row">
-            <div class="validation1 part1">Validation Code</div>
+            <div class="validation1 part1">
+                <input type="text" id="generatedCode">
+            </div>
             <div class="validation2 part2">
                 <input type="text" placeholder="Validation Code">
             </div>
