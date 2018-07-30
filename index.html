@@ -18,6 +18,11 @@
             }
             document.getElementById("generatedCode").value=codes;
         }
+        function focusOn(x) {
+            if (x=="name" || x=="lastname" || x=="username" || x=="email" || x=="validationcode2"){
+                
+            }
+        }
     </script>
 </head>
 <body onload="generateCo()">
@@ -26,42 +31,55 @@
         <div class="row">
             <div class="name1 part1"> Name:</div>
             <div class="name2 part2">
-                <input type="text" placeholder="First Name">
+                <input id="name" type="text" placeholder="First Name" onfocus="focusOn(this.id)">
             </div>
-            <div class="name3 part3"></div>
+
+            <div class="name3 part3">
+                <span id="nameEr"></span>
+            </div>
         </div>
         <div class="row">
+
             <div class="surName1 part1">SurName:</div>
             <div class="surName2 part2">
-                <input type="text" placeholder="Last Name">
+                <input id="lastname" type="text" placeholder="Last Name">
             </div>
-            <div class="surName3 part3"></div>
+            <div class="surName3 part3">
+                <span id="surNameEr"></span>
+            </div>
         </div>
         <div class="row">
             <div class="nickName1 part1">NickName:</div>
             <div class="nickName2 part2">
-                <input type="text" placeholder="User Name">
+                <input id="username" type="text" placeholder="User Name">
             </div>
-            <div class="nickName3 part3"></div>
+            <div class="nickName3 part3">
+                <span id="nickNameEr"></span>
+            </div>
         </div>
         <div class="row">
             <div class="password1 part1">Password:</div>
             <div class="password2 part2">
-                <input type="password">
+                <input id="password" type="password">
             </div>
-            <div class="password3 part3"></div>
+            <div class="password3 part3">
+                <span id="passEr"></span>
+            </div>
         </div>
         <div class="row">
             <div class="email1 part1">E-mail:</div>
             <div class="email2 part2">
-                <input type="email">
+                <input id="email" type="email">
             </div>
-            <div class="email3 part3"></div>
+            <div class="email3 part3">
+                <span id="emailEr"></span>
+            </div>
+
         </div>
         <div class="row">
             <div class="dateBirth1 part1">Date of Birth:</div>
             <div class="dateBirth2 part2">
-                <input type="date">
+                <input id="date" type="date">
             </div>
             <div class="dateBirth3 part3"></div>
         </div>
@@ -101,12 +119,15 @@
         </div>
         <div class="row">
             <div class="validation1 part1">
-                <input type="text" id="generatedCode">
+                <input  type="text" id="generatedCode">
             </div>
             <div class="validation2 part2">
-                <input type="text" placeholder="Validation Code">
+                <input id="validationcode2" type="text" placeholder="Validation Code">
             </div>
-            <div class="validation3 part3"></div>
+            <div class="validation3 part3">
+                <span id="validationEr"></span>
+            </div>
+
         </div>
         <div class="row">
             <div class="submit1 part1"></div>
