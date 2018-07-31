@@ -5,6 +5,9 @@
     font-family: Roboto, sans-serif;
     font-size: 14px;
 }
+input:focus, select:focus{
+    outline: none;
+}
 .form1{
     width: 750px;
     height: 500px;

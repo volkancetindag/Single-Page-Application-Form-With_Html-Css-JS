@@ -20,22 +20,62 @@
         }
         function focusOn(x) {
             if (x=="name" || x=="lastname" || x=="username" || x=="email" || x=="validationcode2"){
-                
+                document.getElementById(x).value=" ";
+                document.getElementById(x).style.background="#fff7db";
+                document.getElementById(x).style.color="#000";
+
             }
+        }
+        function blurOn(x, y) {
+            if(y==" "){
+                if (x=="name"){
+                    document.getElementById(x).value="First Name";
+                }
+                if (x=="lastname"){
+                    document.getElementById(x).value="Last Name";
+                }
+                if (x=="username"){
+                    document.getElementById(x).value="User Name";
+                }
+                if (x=="email"){
+                    document.getElementById(x).value="E-mail";
+                }
+                if (x=="validationcode2"){
+                    document.getElementById(x).value="Validation Code";
+                }
+
+                document.getElementById(x).style.background="#fff";
+                document.getElementById(x).style.color="#ababab";
+            }
+            else {
+              document.getElementById(x).style.background="#fff";
+              document.getElementById(x).style.color="#000";
+
+            }
+        }
+        function submit() {
+
+            if ( document.getElementById("name").value === "First Name") {
+                document.getElementById("nameer").innerHTML="Please write first name";
+            }
+            else {
+                document.getElementById("nameer").innerHTML="what is wrong with you?";
+            }
+
         }
     </script>
 </head>
 <body onload="generateCo()">
 <div class="form1">
-    <form action="get">
+    <form action="">
         <div class="row">
             <div class="name1 part1"> Name:</div>
             <div class="name2 part2">
-                <input id="name" type="text" placeholder="First Name" onfocus="focusOn(this.id)">
+                <input id="name" type="text" value="First Name" onfocus="focusOn(this.id)" onblur="blurOn(this.id, this.value)">
             </div>
 
             <div class="name3 part3">
-                <span id="nameEr"></span>
+                <span id="nameer">volkan</span>
             </div>
         </div>
         <div class="row">
@@ -69,7 +109,7 @@
         <div class="row">
             <div class="email1 part1">E-mail:</div>
             <div class="email2 part2">
-                <input id="email" type="email">
+                <input id="email" type="email" placeholder="E-mail">
             </div>
             <div class="email3 part3">
                 <span id="emailEr"></span>
@@ -132,7 +172,7 @@
         <div class="row">
             <div class="submit1 part1"></div>
             <div class="submit2 part2">
-                <input type="button" value="Submit">
+                <input type="button" value="Submit" onclick="submit()">
             </div>
             <div class="submit3 part3"></div>
         </div>
