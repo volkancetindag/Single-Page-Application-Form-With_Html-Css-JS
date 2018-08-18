@@ -5,13 +5,15 @@
     font-family: Roboto, sans-serif;
     font-size: 14px;
 }
-input:focus, select:focus{
-    outline: none;
-}
+
 .form1{
     width: 610px;
     height: 450px;
     margin: 60px auto;
     background-color: #f1c40f;
     padding: 100px 0 0 40px;
+}
+td{
+    height: 30px;
+    height: 30px;
 }
