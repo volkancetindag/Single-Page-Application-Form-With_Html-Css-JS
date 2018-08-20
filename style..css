@@ -16,3 +16,15 @@
 td{
     height: 30px;
 }
+#button{
+    width: 120px;
+    height: 30px;
+    border: 2px solid #9d3a56;
+    background-color:#993333 ;
+    color: #fff;
+    font-weight: bold;
+}
+#button:hover{
+    border-color: #9b4562;
+    background-color:#72273c ;
+}
