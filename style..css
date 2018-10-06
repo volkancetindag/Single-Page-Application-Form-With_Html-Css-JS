@@ -56,3 +56,13 @@ td{
     border-radius: 3px;
 
 }
+#generatedcode{
+    width: 135px;
+    height: 56px;
+    background-image: url("img/validationBg.jpg");
+    font: bold 30px Tahoma;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    text-shadow: 0 1px 1px #000;
+}

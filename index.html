@@ -5,9 +5,25 @@
     <title>Application Form</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="style..css" type="text/css">
+    <script type="text/javascript">
+        function generateCode()
+        {
+            var codes="";
+            for(var i=1;i<=6;i++)
+            {
+                if(Math.round(Math.random())==1)
+                {codes=codes+String.fromCharCode(65+25*Math.random());}
+                else
+                {codes=codes+String.fromCharCode(48+9*Math.random());}
+            }
+            document.getElementById("generatedcode").value=codes;
 
+
+
+        }
+    </script>
 </head>
-<body>
+<body onload="generateCode()">
     <div class="form1">
         <form action="" method="get">
             <table width="630" border="1">
@@ -93,24 +109,24 @@
                 <tr>
                     <td>Gender: </td>
                     <td>
-                        <input type="radio">Man
-                        <input type="radio">Woman
+                        <input type="radio" name="gender" checked >Man
+                        <input type="radio" name="gender">Woman
                     </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>Hobbies: </td>
                     <td>
-                        <input type="checkbox">Sport
-                        <input type="checkbox">Cinema
-                        <input type="checkbox">Music
-                        <input type="checkbox">Travel
+                        <input type="checkbox" id="hobby1">Sport
+                        <input type="checkbox" id="hobby2">Cinema
+                        <input type="checkbox" id="hobby3">Music
+                        <input type="checkbox" id="hobby4">Travel
                     </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td><input type="text" id="entercode" value="Write Security Code"></td>
+                    <td> <input type="text" id="generatedcode"> &nbsp;</td>
+                    <td><input type="text" id="enteredcode" value="Write Security Code"></td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
