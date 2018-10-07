@@ -21,6 +21,14 @@
 
 
         }
+        function focuson(x) {
+            if (x == "name" || x=="surname" || x=="nickname" || x=="email" || x=="enteredcode" ){
+                document.getElementById(x).value="";
+                document.getElementById(x).style.background="#fff7db";
+                document.getElementById(x).style.color="#000";
+                document.getElementById(x).style.borderColor="#000";
+            }
+        }
     </script>
 </head>
 <body onload="generateCode()">
@@ -29,28 +37,28 @@
             <table width="630" border="1">
                 <tr>
                     <td width="180">Name: </td>
-                    <td width="270"><input type="text" id="name" value="Write Your Name" ></td>
-                    <td width="180">&nbsp;</td>
+                    <td width="270"><input type="text" id="name" value="Write Your Name" onfocus="focuson(this.id)" onblur="exit(this.id, this.value)" ></td>
+                    <td width="180"> <span id="namenotification"></span></td>
                 </tr>
                 <tr>
                     <td>Surname: </td>
-                    <td><input type="text" id="surname" value="Write Your SurName"></td>
-                    <td>&nbsp;</td>
+                    <td><input type="text" id="surname" value="Write Your SurName" onfocus="focuson(this.id)" onblur="exit(this.id, this.value)"  ></td>
+                    <td><span id="surnamenotification"></span></td>
                 </tr>
                 <tr>
                     <td>Nick Name: </td>
-                    <td><input type="text" id="nickname" value="Write Your Nick Name"></td>
+                    <td><input type="text" id="nickname" value="Write Your Nick Name" onfocus="focuson(this.id)" onblur="exit(this.id, this.value)"  ></td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td>Password: </td>
                     <td><input type="password" id="password"></td>
-                    <td>&nbsp;</td>
+                    <td> <span id="passwordnotification"></span></td>
                 </tr>
                 <tr>
                     <td>E-mail: </td>
-                    <td><input type="email" id="email" value="Write your E-mail"></td>
-                    <td>&nbsp;</td>
+                    <td><input type="email" id="email" value="Write your E-mail" onfocus="focuson(this.id)" onblur="exit(this.id, this.value)"  ></td>
+                    <td> <span id="emailnotification"></span></td>
                 </tr>
                 <tr>
                     <td>Date of Birth: </td>
@@ -126,8 +134,8 @@
                 </tr>
                 <tr>
                     <td> <input type="text" id="generatedcode"> &nbsp;</td>
-                    <td><input type="text" id="enteredcode" value="Write Security Code"></td>
-                    <td>&nbsp;</td>
+                    <td><input type="text" id="enteredcode" value="Write Security Code" onfocus="focuson(this.id)" onblur="exit(this.id, this.value)"  ></td>
+                    <td> <span id="codenotification"></span></td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>

@@ -16,6 +16,9 @@
 td{
     height: 30px;
 }
+input:focus, select:focus{
+    outline: none;
+}
 #button{
     width: 120px;
     height: 30px;
