@@ -29,6 +29,55 @@
                 document.getElementById(x).style.borderColor="#000";
             }
         }
+        function exit(x, y) {
+            if (y == "") {
+                if (x == "name") {
+                    document.getElementById(x).value="Write Your Name";
+                }
+                if (x == "surname") {
+                    document.getElementById(x).value="Write Your SurName";
+                }
+                if (x == "nickname") {
+                    document.getElementById(x).value="Write Your NickName";
+                }
+                if (x == "email") {
+                    document.getElementById(x).value="Write Your E-mail";
+                }
+                if (x == "enteredcode") {
+                    document.getElementById(x).value="Write Security Code";
+                }
+                document.getElementById(x).style.background="#fff";
+                document.getElementById(x).style.color="#ababab";
+                document.getElementById(x).style.borderColor="#bbb";
+
+            }
+            else{
+                document.getElementById(x).style.background="#fff";
+                document.getElementById(x).style.color="#000";
+                document.getElementById(x).style.borderColor="#bbb";
+            }
+        }
+        function run() {
+            var rule, type;
+            if (document.getElementById("name").value="Write Your Name") {
+                document.getElementById("namenotification").innerHTML="Please Write Your Name!";
+            }
+            if (document.getElementById("surname").value="Write Your SurName") {
+                document.getElementById("surnamenotification").innerHTML="Please Write Your SurName!";
+            }
+            if (document.getElementById("nickname").value="Write Your NickName") {
+                document.getElementById("nicknamenotification").innerHTML="Please Write Your NickName!";
+            }
+            if (document.getElementById("email").value="Write Your E-mail") {
+                document.getElementById("emailnotification").innerHTML="Please Write Your E-mail!";
+            }
+            if (document.getElementById("enteredcode").value="Write Security Code") {
+                document.getElementById("codenotification").innerHTML="Please Write Your Security Code!";
+            }
+            else if (document.getElementById("generatedcode").value != document.getElementById("enteredcode").value) {
+                document.getElementById("codenotification").innerHTML="Codes don`t match! ";
+            }
+        }
     </script>
 </head>
 <body onload="generateCode()">
@@ -47,8 +96,8 @@
                 </tr>
                 <tr>
                     <td>Nick Name: </td>
-                    <td><input type="text" id="nickname" value="Write Your Nick Name" onfocus="focuson(this.id)" onblur="exit(this.id, this.value)"  ></td>
-                    <td>&nbsp;</td>
+                    <td><input type="text" id="nickname" value="Write Your NickName" onfocus="focuson(this.id)" onblur="exit(this.id, this.value)"  ></td>
+                    <td><span id="nicknamenotification"></span></td>
                 </tr>
                 <tr>
                     <td>Password: </td>
@@ -57,7 +106,7 @@
                 </tr>
                 <tr>
                     <td>E-mail: </td>
-                    <td><input type="email" id="email" value="Write your E-mail" onfocus="focuson(this.id)" onblur="exit(this.id, this.value)"  ></td>
+                    <td><input type="email" id="email" value="Write Your E-mail" onfocus="focuson(this.id)" onblur="exit(this.id, this.value)"  ></td>
                     <td> <span id="emailnotification"></span></td>
                 </tr>
                 <tr>
@@ -139,7 +188,7 @@
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
-                    <td><input id="button" type="button" value="Send" ></td>
+                    <td><input id="button" type="button" value="Send" onclick="run()" ></td>
                     <td>&nbsp;</td>
                 </tr>
             </table>
