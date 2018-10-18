@@ -58,7 +58,18 @@
             }
         }
         function run() {
+
+            document.getElementById("namenotification").innerHTML="";
+            document.getElementById("surnamenotification").innerHTML="";
+            document.getElementById("nicknamenotification").innerHTML="";
+            document.getElementById("emailnotification").innerHTML="";
+            document.getElementById("passwordnotification").innerHTML="";
+            document.getElementById("codenotification").innerHTML="";
+
             var rule, type;
+            type = document.getElementById("email").value;
+            rule = /.+@.+\.+./;
+
             if (document.getElementById("name").value="Write Your Name") {
                 document.getElementById("namenotification").innerHTML="Please Write Your Name!";
             }
@@ -68,8 +79,13 @@
             if (document.getElementById("nickname").value="Write Your NickName") {
                 document.getElementById("nicknamenotification").innerHTML="Please Write Your NickName!";
             }
+            if (document.getElementById("password").value="") {
+                document.getElementById("passwordnotification").innerHTML="Please Write Your Password!";
+            }
             if (document.getElementById("email").value="Write Your E-mail") {
                 document.getElementById("emailnotification").innerHTML="Please Write Your E-mail!";
+            } else if(!rule.test(type)){
+                document.getElementById("emailnotification").innerHTML="Please Write Correct Mail!";
             }
             if (document.getElementById("enteredcode").value="Write Security Code") {
                 document.getElementById("codenotification").innerHTML="Please Write Your Security Code!";

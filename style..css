@@ -69,3 +69,7 @@ input:focus, select:focus{
     border: none;
     text-shadow: 0 1px 1px #000;
 }
+span{
+    color: #b00;
+    font-size: 11px;
+}
