@@ -59,16 +59,18 @@
         }
         function run() {
 
-            document.getElementById("namenotification").innerHTML="";
+            /*document.getElementById("namenotification").innerHTML="";
             document.getElementById("surnamenotification").innerHTML="";
             document.getElementById("nicknamenotification").innerHTML="";
             document.getElementById("emailnotification").innerHTML="";
             document.getElementById("passwordnotification").innerHTML="";
             document.getElementById("codenotification").innerHTML="";
 
-            var rule, type;
+            var rule, type, genco, enco;
             type = document.getElementById("email").value;
             rule = /.+@.+\.+./;
+            genco = document.getElementById("generatedcode").value;
+            enco = document.getElementById("enteredcode").value;
 
             if (document.getElementById("name").value="Write Your Name") {
                 document.getElementById("namenotification").innerHTML="Please Write Your Name!";
@@ -90,9 +92,36 @@
             if (document.getElementById("enteredcode").value="Write Security Code") {
                 document.getElementById("codenotification").innerHTML="Please Write Your Security Code!";
             }
-            else if (document.getElementById("generatedcode").value != document.getElementById("enteredcode").value) {
+            else if (genco != enco) {
                 document.getElementById("codenotification").innerHTML="Codes don`t match! ";
-            }
+            }*/
+
+            document.getElementById("namenotification").innerHTML="";
+            document.getElementById("surnamenotification").innerHTML="";
+            document.getElementById("nicknamenotification").innerHTML="";
+            document.getElementById("emailnotification").innerHTML="";
+            document.getElementById("passwordnotification").innerHTML="";
+            document.getElementById("codenotification").innerHTML="";
+            var kural, yazi;
+            yazi=document.getElementById("email").value;
+            kural=/.+@.+\.+./;
+
+            if(document.getElementById("name").value=="Write Your Name")
+            {document.getElementById("namenotification").innerHTML="Adınızı yazmadınız!";}
+            if(document.getElementById("surname").value=="Write Your SurName")
+            {document.getElementById("surnamenotification").innerHTML="Soyadınızı yazmadınız!";}
+            if(document.getElementById("nickname").value=="Write Your NickName")
+            {document.getElementById("nicknamenotification").innerHTML="Kullanıcı adını yazmadınız!";}
+            if(document.getElementById("password").value=="")
+            {document.getElementById("passwordnotification").innerHTML="Şifrenizi yazmadınız!";}
+            if(document.getElementById("email").value=="Write Your E-mail")
+            {document.getElementById("emailnotification").innerHTML="Mailinizi yazmadınız!";}
+            else if(!kural.test(yazi))
+            {document.getElementById("emailnotification").innerHTML="Geçersiz Mail!!"}
+            if(document.getElementById("enteredcode").value=="Write Security Code")
+            {document.getElementById("codenotification").innerHTML="Güvenlik kodunu yazmadınız!";}
+            else if(document.getElementById("generatedcode").value!=document.getElementById("enteredcode").value)
+            {document.getElementById("codenotification").innerHTML="Güvenlik kodu yanlış";}
         }
     </script>
 </head>
@@ -200,7 +229,7 @@
                 <tr>
                     <td> <input type="text" id="generatedcode"> &nbsp;</td>
                     <td><input type="text" id="enteredcode" value="Write Security Code" onfocus="focuson(this.id)" onblur="exit(this.id, this.value)"  ></td>
-                    <td> <span id="codenotification"></span></td>
+                    <td> <span id="codenotification"> </span></td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>

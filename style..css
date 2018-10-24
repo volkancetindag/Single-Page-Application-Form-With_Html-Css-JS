@@ -32,7 +32,7 @@ input:focus, select:focus{
     border-color: #9b4562;
     background-color:#72273c ;
 }
-#name, #surname, #nickname,#password, #email, #entercode{
+#name, #surname, #nickname,#password, #email, #enteredcode{
     width: 175px;
     height: 25px;
     border: 1px solid #bbb;

@@ -17,14 +17,32 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5951389">
+    <splitter split-orientation="horizontal" split-proportion="0.6927083">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="76" column="82" selection-start-line="76" selection-start-column="82" selection-end-line="76" selection-end-column="82" />
+                <state relative-caret-position="216">
+                  <caret line="116" column="73" selection-start-line="116" selection-start-column="73" selection-end-line="116" selection-end-column="73" />
+                  <folding>
+                    <element signature="e#331#712#0" />
+                    <element signature="e#741#1120#0" />
+                    <element signature="e#1149#2290#0" />
+                    <element signature="n#select#0;n#td#1;n#tr#5;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#select#1;n#td#1;n#tr#5;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#select#2;n#td#1;n#tr#5;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#select#0;n#td#1;n#tr#6;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="js41.html" pinned="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/Desktop/js41.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="264">
+                  <caret line="80" column="1" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -45,8 +63,8 @@
           <file leaf-file-name="style..css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style..css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="608">
-                  <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+                <state relative-caret-position="596">
+                  <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -70,6 +88,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/style..css" />
+        <option value="$USER_HOME$/Desktop/js41.html" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -83,11 +102,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1510" />
-    <option name="y" value="-23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -140,14 +159,15 @@
       <workItem from="1538932115803" duration="2099000" />
       <workItem from="1539147883168" duration="4553000" />
       <workItem from="1539853130067" duration="1277000" />
+      <workItem from="1540355696753" duration="10540000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45411000" />
+    <option name="totallyTimeSpent" value="55951000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="0" y="0" width="1536" height="864" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
@@ -500,13 +520,6 @@
     <entry file="file://$PROJECT_DIR$/img/validationBg.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/js41.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="37" column="1" lean-forward="true" selection-start-line="23" selection-end-line="37" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style..css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -514,10 +527,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/js41.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="80" column="1" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="76" column="82" selection-start-line="76" selection-start-column="82" selection-end-line="76" selection-end-column="82" />
+        <state relative-caret-position="216">
+          <caret line="116" column="73" selection-start-line="116" selection-start-column="73" selection-end-line="116" selection-end-column="73" />
+          <folding>
+            <element signature="e#331#712#0" />
+            <element signature="e#741#1120#0" />
+            <element signature="e#1149#2290#0" />
+            <element signature="n#select#0;n#td#1;n#tr#5;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#select#1;n#td#1;n#tr#5;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#select#2;n#td#1;n#tr#5;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#select#0;n#td#1;n#tr#6;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
